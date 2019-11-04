@@ -1,8 +1,8 @@
 ### 一、Python的字典的格式和JSON格式对比：
 
-- 字典中的引号支持单引号和双引号，JSON格式只支持双引号
-- 字典中的True/False首字母大写，JSON格式为true/false
-- 字典中的空值为None, JSON格式为null
+1. 字典中的引号支持单引号和双引号，JSON格式只支持双引号
+2. 字典中的True/False首字母大写，JSON格式为true/false
+3. 字典中的空值为None, JSON格式为null
 
 
 
@@ -20,7 +20,7 @@
 
 
 #### 2.1 json.dumps()举例：将字典转化为字符串
-- 默认格式
+##### 1. 默认格式
 ```
 import json
 dict1 = {"age": "12"}
@@ -33,7 +33,7 @@ dict1的类型：<class 'dict'>
 json.dumps()函数处理后的类型：<class 'str'>
 ```
 
-- json.dumps()支持将json文本格式化输出
+##### 2. json.dumps()支持将json文本格式化输出
 	- indent: 缩进空格数，indent=0输出为一行
 	- sork_keys=True: 将json结果的key按ascii码排序
 	- ensure_ascii=Fasle: 不确保ascii码，如果返回格式为utf-8包含中文，不转化为\u...
@@ -61,6 +61,7 @@ json_info = '{"age": "12"}'
 dict1 = json.loads(json_info)
 print(f"json_info的类型：{type(json_info)}")
 print(f"json.loads()函数处理后的类型：{type(dict1)}")
+
 # 执行结果
 json_info的类型：<class 'str'>
 json.loads()函数处理后的类型：<class 'dict'>
@@ -97,65 +98,7 @@ print(info)
 
 ### 三、参考资料
 - [python中json文件处理涉及的四个函数json.dumps()和json.loads()、json.dump()和json.load()的区分](https://www.cnblogs.com/xiaomingzaixian/p/7286793.html)
-- [Python接口测试实战2 - 使用Python发送请求](file:///C:/Users/admin/Desktop/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%AE%9E%E6%88%982%20-%20%E4%BD%BF%E7%94%A8Python%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%20-%20%E7%AE%80%E4%B9%A6.html)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [Python接口测试实战2 - 使用Python发送请求](https://www.jianshu.com/p/e94a18950a53)
 
 
 
